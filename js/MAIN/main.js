@@ -6,3 +6,12 @@ document.querySelectorAll(".card").forEach(card => {
         }
     });
 });
+function goExit() {
+
+    document.body.classList.add("fade-out");
+
+    setTimeout(() => {
+        //–{”ÔŠÂ‹«
+        window.location.href = "../index.html";
+    }, 500);
+}

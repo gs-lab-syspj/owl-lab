@@ -129,3 +129,35 @@ body {
         opacity: 1;
     }
 }
+
+/*ログインボタン*/
+.exit-btn {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    padding: 1rem 1.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: 1px solid #a855f7;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    transition: 0.3s;
+    z-index: 999;
+}
+
+    .exit-btn:hover {
+        background: #a855f7;
+        box-shadow: 0 0 15px #a855f7;
+        transform: translateY(-3px);
+    }
+
+@media (max-width: 768px) {
+
+    .exit-btn {
+        right: 15px;
+        bottom: 15px;
+        width: calc(100% - 30px);
+    }
+}
